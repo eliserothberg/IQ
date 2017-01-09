@@ -1,1 +1,1 @@
-# IQ
+# useYourIQ

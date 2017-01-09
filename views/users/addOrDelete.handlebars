@@ -1,0 +1,58 @@
+<div class="mrgn">
+    <div class="container">
+        <div class="input">
+            <h3 class="addHead">CREATE ACCOUNT</h3>
+            <form class="create-update-form" id="creater" action="/users/create" method="POST">
+
+                <div class="col-3">
+                    <label> Email
+                        <input type="email" class="em" tabindex="2" name="email" required>
+                    </label>
+                </div>
+
+                <div class="col-3">
+                    <label> Password
+                        <input type="password" tabindex="3" class="pass" name="password" required>
+                    </label>
+                </div>
+
+                <div class="col-3">
+                    <label> Level
+                        <input type="level" tabindex="3" id="level" name="level" required>
+                    </label>
+                </div>
+
+                <button class="btn btn-default" type="submit">
+                    <div>CREATE</div>
+                </button>
+            </form>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="input">
+
+        <h3 class="addHead">DELETE ACCOUNT</h3>
+        <form class="delete-update-form" id="delete" action="/users/delete" method="POST">
+
+            <div class="col-1">
+                <label>
+                    Email
+                    <input type="email" class="em" tabindex="2" name="email" required>
+                </label>
+            </div>
+
+            <button class="btn btn-default" type="submit">
+                <div>DELETE</div>
+            </button>
+        </form>
+    </div>
+
+    {{#if info}}
+        <div id="flashMessage">{{info}}</div>
+    {{/if}}
+
+</div>
+<a href="/users/sign-out">
+    <button id='button' class="btn btn-default">SIGN OUT</button>
+</a>

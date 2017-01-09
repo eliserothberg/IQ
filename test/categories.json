@@ -1,0 +1,648 @@
+{
+  "id": "57114e10e4b0a3f93805ebc6",
+  "title": "Campaigns",
+  "listType": "account",
+  "modifiedDate": 0,
+  "fields": [
+    {
+      "id": "led",
+      "name": "Last Event Date (sort)",
+      "listOptions": [],
+      "isMultiSelect": false,
+      "isEditable": true,
+      "isLinkedField": false,
+      "dataType": "DateTime"
+    },
+    {
+      "id": "1",
+      "name": "Owner",
+      "listOptions": [],
+      "isMultiSelect": false,
+      "isEditable": true,
+      "isLinkedField": false,
+      "dataType": "User"
+    },
+    {
+      "id": "process_created_date",
+      "name": "Created Date",
+      "listOptions": [],
+      "isMultiSelect": false,
+      "isEditable": true,
+      "isLinkedField": false,
+      "dataType": "DateTime"
+    },
+    {
+      "id": "3",
+      "name": "Revenue",
+      "listOptions": [],
+      "isMultiSelect": false,
+      "isEditable": true,
+      "isLinkedField": false,
+      "dataType": "Numeric"
+    },
+    {
+      "id": "0",
+      "name": "Status",
+      "listOptions": [
+        {
+          "id": "13",
+          "display": "Outreach"
+        },
+        {
+          "id": "0",
+          "display": "Lead (0%)"
+        },
+        {
+          "id": "9",
+          "display": "Prospect (10%)"
+        },
+        {
+          "id": "7",
+          "display": "Early Stage (25%)"
+        },
+        {
+          "id": "10",
+          "display": "Possibility (50%)"
+        },
+        {
+          "id": "4",
+          "display": "Likely (75%)"
+        },
+        {
+          "id": "8",
+          "display": "Very Likely (90%)"
+        },
+        {
+          "id": "12",
+          "display": "Deal Won (100%)"
+        },
+        {
+          "id": "5",
+          "display": "Revisit Later"
+        },
+        {
+          "id": "6",
+          "display": "Deal Lost"
+        }
+      ],
+      "isMultiSelect": false,
+      "isEditable": true,
+      "isLinkedField": false,
+      "dataType": "List"
+    },
+    {
+      "id": "process_close_date",
+      "name": "Close Date",
+      "listOptions": [],
+      "isMultiSelect": false,
+      "isEditable": true,
+      "isLinkedField": false,
+      "dataType": "DateTime"
+    },
+    {
+      "id": "20",
+      "name": "Company",
+      "listOptions": [],
+      "isMultiSelect": false,
+      "isEditable": true,
+      "isLinkedField": false,
+      "dataType": "Text"
+    },
+    {
+      "id": "17",
+      "name": "New or Returning Business",
+      "listOptions": [
+        {
+          "id": "0",
+          "display": "Returning Business"
+        },
+        {
+          "id": "1",
+          "display": "New Business"
+        },
+        {
+          "id": "2",
+          "display": "Upsell/New Sale to Existing Project"
+        }
+      ],
+      "isMultiSelect": false,
+      "isEditable": true,
+      "isLinkedField": false,
+      "dataType": "List"
+    },
+    {
+      "id": "14",
+      "name": "End Date (of campaign)",
+      "listOptions": [],
+      "isMultiSelect": false,
+      "isEditable": true,
+      "isLinkedField": false,
+      "dataType": "Date"
+    },
+    {
+      "id": "15",
+      "name": "Launch Date",
+      "listOptions": [],
+      "isMultiSelect": false,
+      "isEditable": true,
+      "isLinkedField": false,
+      "dataType": "Date"
+    },
+    {
+      "id": "16",
+      "name": "Product",
+      "listOptions": [
+        {
+          "id": "16",
+          "display": "Bracket Vote"
+        },
+        {
+          "id": "3",
+          "display": "Category Uploader"
+        },
+        {
+          "id": "1",
+          "display": "Category Vote"
+        },
+        {
+          "id": "29",
+          "display": "Chatter Map"
+        },
+        {
+          "id": "25",
+          "display": "Connect Live Moderation"
+        },
+        {
+          "id": "28",
+          "display": "Custom"
+        },
+        {
+          "id": "5",
+          "display": "Digital Autograph"
+        },
+        {
+          "id": "13",
+          "display": "Easy Meme"
+        },
+        {
+          "id": "33",
+          "display": "Facebook Hotspot"
+        },
+        {
+          "id": "40",
+          "display": "Facebook Messenger"
+        },
+        {
+          "id": "17",
+          "display": "Fan Feed"
+        },
+        {
+          "id": "11",
+          "display": "Galileo/Live Poll"
+        },
+        {
+          "id": "8",
+          "display": "Google Voting"
+        },
+        {
+          "id": "0",
+          "display": "Hashtag Vote: Facebook"
+        },
+        {
+          "id": "7",
+          "display": "Hashtag Vote: Instagram"
+        },
+        {
+          "id": "22",
+          "display": "Hashtag Vote: Twitter"
+        },
+        {
+          "id": "31",
+          "display": "InQuizator"
+        },
+        {
+          "id": "21",
+          "display": "Leaderboard"
+        },
+        {
+          "id": "19",
+          "display": "Live Studio"
+        },
+        {
+          "id": "26",
+          "display": "Native App"
+        },
+        {
+          "id": "24",
+          "display": "Passion Meter"
+        },
+        {
+          "id": "37",
+          "display": "Rating"
+        },
+        {
+          "id": "23",
+          "display": "Scratcher"
+        },
+        {
+          "id": "36",
+          "display": "Share to Vote"
+        },
+        {
+          "id": "9",
+          "display": "Showdown"
+        },
+        {
+          "id": "34",
+          "display": "SMS"
+        },
+        {
+          "id": "10",
+          "display": "Sociable Q&A"
+        },
+        {
+          "id": "4",
+          "display": "Social Hub"
+        },
+        {
+          "id": "12",
+          "display": "Social to Air"
+        },
+        {
+          "id": "32",
+          "display": "Socialize"
+        },
+        {
+          "id": "35",
+          "display": "Standard Vote"
+        },
+        {
+          "id": "15",
+          "display": "Sweepstakes"
+        },
+        {
+          "id": "14",
+          "display": "Toll-Free"
+        },
+        {
+          "id": "30",
+          "display": "Top Trending"
+        },
+        {
+          "id": "2",
+          "display": "Triple Play"
+        },
+        {
+          "id": "41",
+          "display": "Trivia"
+        },
+        {
+          "id": "27",
+          "display": "Twitter Auto Reply"
+        },
+        {
+          "id": "38",
+          "display": "Twitter Card"
+        },
+        {
+          "id": "18",
+          "display": "uPic"
+        },
+        {
+          "id": "6",
+          "display": "Video Reaction"
+        },
+        {
+          "id": "20",
+          "display": "Video Uploader"
+        }
+      ],
+      "isMultiSelect": true,
+      "isEditable": true,
+      "isLinkedField": false,
+      "dataType": "List"
+    },
+    {
+      "id": "19",
+      "name": "Support",
+      "listOptions": [
+        {
+          "id": "0",
+          "display": "Israel Niezen"
+        },
+        {
+          "id": "1",
+          "display": "Chandler Huston"
+        },
+        {
+          "id": "2",
+          "display": "Michael Porter"
+        },
+        {
+          "id": "3",
+          "display": "Jason George"
+        },
+        {
+          "id": "4",
+          "display": "Lindsey Hale"
+        },
+        {
+          "id": "5",
+          "display": "Clark Maturo"
+        }
+      ],
+      "isMultiSelect": true,
+      "isEditable": true,
+      "isLinkedField": false,
+      "dataType": "List"
+    },
+    {
+      "id": "18",
+      "name": "Vertical",
+      "listOptions": [
+        {
+          "id": "1",
+          "display": "Agency"
+        },
+        {
+          "id": "0",
+          "display": "Brand"
+        },
+        {
+          "id": "8",
+          "display": "Charity"
+        },
+        {
+          "id": "11",
+          "display": "Education"
+        },
+        {
+          "id": "2",
+          "display": "Entertainment"
+        },
+        {
+          "id": "3",
+          "display": "Government"
+        },
+        {
+          "id": "6",
+          "display": "Live Event"
+        },
+        {
+          "id": "4",
+          "display": "Music"
+        },
+        {
+          "id": "5",
+          "display": "News"
+        },
+        {
+          "id": "7",
+          "display": "Publisher"
+        },
+        {
+          "id": "9",
+          "display": "Sports"
+        }
+      ],
+      "isMultiSelect": true,
+      "isEditable": true,
+      "isLinkedField": false,
+      "dataType": "List"
+    },
+    {
+      "id": "21",
+      "name": "Lost Reason",
+      "listOptions": [
+        {
+          "id": "13",
+          "display": "Budget"
+        },
+        {
+          "id": "8",
+          "display": "Capabilities Not Compatible"
+        },
+        {
+          "id": "2",
+          "display": "Competitor - iPowow"
+        },
+        {
+          "id": "6",
+          "display": "Competitor - Other"
+        },
+        {
+          "id": "16",
+          "display": "Competitor - vidpresso"
+        },
+        {
+          "id": "7",
+          "display": "Contact Stopped Responding"
+        },
+        {
+          "id": "11",
+          "display": "Decided Not to Move Forward"
+        },
+        {
+          "id": "5",
+          "display": "Executing in House"
+        },
+        {
+          "id": "17",
+          "display": "Legal Issues"
+        },
+        {
+          "id": "15",
+          "display": "Other"
+        },
+        {
+          "id": "9",
+          "display": "Project Didn't Happen"
+        },
+        {
+          "id": "0",
+          "display": "Sponsor Didn't Move Forward"
+        },
+        {
+          "id": "14",
+          "display": "Timing"
+        },
+        {
+          "id": "10",
+          "display": "Unknown"
+        }
+      ],
+      "isMultiSelect": false,
+      "isEditable": true,
+      "isLinkedField": false,
+      "dataType": "List"
+    },
+    {
+      "id": "28",
+      "name": "Ops Labor Cost",
+      "listOptions": [],
+      "isMultiSelect": false,
+      "isEditable": true,
+      "isLinkedField": false,
+      "dataType": "Numeric"
+    },
+    {
+      "id": "29",
+      "name": "Tech Labor Cost",
+      "listOptions": [],
+      "isMultiSelect": false,
+      "isEditable": true,
+      "isLinkedField": false,
+      "dataType": "Numeric"
+    },
+    {
+      "id": "31",
+      "name": "Bandwidth Costs",
+      "listOptions": [],
+      "isMultiSelect": false,
+      "isEditable": true,
+      "isLinkedField": false,
+      "dataType": "Numeric"
+    },
+    {
+      "id": "30",
+      "name": "Cost of Sales",
+      "listOptions": [],
+      "isMultiSelect": false,
+      "isEditable": true,
+      "isLinkedField": false,
+      "dataType": "Numeric"
+    },
+    {
+      "id": "33",
+      "name": "Days in Current Status",
+      "listOptions": [],
+      "isMultiSelect": false,
+      "isEditable": false,
+      "isLinkedField": false,
+      "dataType": "Numeric"
+    },
+    {
+      "id": "35",
+      "name": "Inactive (days)",
+      "listOptions": [],
+      "isMultiSelect": false,
+      "isEditable": false,
+      "isLinkedField": false,
+      "dataType": "Numeric"
+    },
+    {
+      "id": "36",
+      "name": "Company Name",
+      "listOptions": [],
+      "isMultiSelect": false,
+      "isEditable": false,
+      "isLinkedField": true,
+      "dataType": "ItemLink"
+    },
+    {
+      "id": "41",
+      "name": "Lead Source",
+      "listOptions": [
+        {
+          "id": "4",
+          "display": "Cold Call"
+        },
+        {
+          "id": "5",
+          "display": "Conference"
+        },
+        {
+          "id": "2",
+          "display": "Current Client"
+        },
+        {
+          "id": "7",
+          "display": "Existing Relationship"
+        },
+        {
+          "id": "3",
+          "display": "Facebook"
+        },
+        {
+          "id": "1",
+          "display": "Hello Email"
+        },
+        {
+          "id": "0",
+          "display": "Live Studio Email"
+        },
+        {
+          "id": "6",
+          "display": "Referral"
+        }
+      ],
+      "isMultiSelect": true,
+      "isEditable": true,
+      "isLinkedField": false,
+      "dataType": "List"
+    },
+    {
+      "id": "44",
+      "name": "Deal Type",
+      "listOptions": [
+        {
+          "id": "0",
+          "display": "Voting Solutions"
+        },
+        {
+          "id": "1",
+          "display": "A La Carte Project"
+        },
+        {
+          "id": "2",
+          "display": "License/Bundle Deal"
+        }
+      ],
+      "isMultiSelect": false,
+      "isEditable": true,
+      "isLinkedField": false,
+      "dataType": "List"
+    },
+    {
+      "id": "45",
+      "name": "Product Line",
+      "listOptions": [
+        {
+          "id": "0",
+          "display": "Voting (Digital or Social)"
+        },
+        {
+          "id": "1",
+          "display": "Native Social Solutions (live studio, messenger, etc)"
+        },
+        {
+          "id": "2",
+          "display": "Digital/Social Widgets"
+        },
+        {
+          "id": "3",
+          "display": "Toll-Free/SMS"
+        },
+        {
+          "id": "4",
+          "display": "Other SaaS (self-serve connect moderation, etc)"
+        }
+      ],
+      "isMultiSelect": false,
+      "isEditable": true,
+      "isLinkedField": false,
+      "dataType": "List"
+    },
+    {
+      "id": "47",
+      "name": "International",
+      "listOptions": [],
+      "isMultiSelect": false,
+      "isEditable": true,
+      "isLinkedField": false,
+      "dataType": "Text"
+    }
+  ],
+  "size": 0,
+  "savedViewNames": null
+}

@@ -1,0 +1,127 @@
+<body>
+  <div class="login-info well header-right">
+    <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cog" aria-hidden="true"></i><span class="caret"></span></a>
+        <ul class="dropdown-menu">
+            <li><a href="/users/sign-out"><i class="fa fa-sign-out" aria-hidden="true"></i>Sign Out</a>
+            </li>
+        </ul>
+    </li>
+    </div>
+
+      <div class="jumbotron">
+        <div class="formWrapperTwo">
+
+        <form class="create-graph-form" id="signin" method="POST" action=javascript:action>
+          <div class="col-4 noBor">
+            <label><span>Start Date</span>
+              <input type="date" class="noBord" tabindex="2" placeholder="YYYY-MM-DD" name="startDate" value="2016-01-01" required>
+
+            </label>
+          </div>
+          <div class="col-4 noBor">
+            <label>
+
+              <span>End Date</span>
+              <input type="date" class="noBord" tabindex="3" placeholder="YYYY-MM-DD" name="endDate" value="2016-12-31" required>
+
+            </label>
+          </div>
+          <button id='button' form="signin" value="Submit" type="submit" class="btn btn-default"><i class="fa fa-bar-chart" aria-hidden="true"></i>GRAPH</button>
+
+          <div class="dropD" tabindex="1">
+            <select name="GroupId" id="GroupId" onChange="this.form.action=this.options[this.selectedIndex].value;">
+	            <option value="" disabled selected>Select An Option</option>
+            <option value="/graph/newRevenueByMonth">New Revenue by Month</option>
+            <option value="/graph/allRevenueByMonth">All Revenue by Month</option>
+		        <option value="/graph/newRevenueSalesperson">New Revenue by Salesperson</option>
+		        <option value="/graph/allRevenueSalesperson">All Revenue by Salesperson</option>
+		        <option value="/graph/newRevenueProductLine">New Revenue by Product Line</option>
+		        <option value="/graph/allRevenueProductLine">All Revenue by Product Line</option>
+		        <option value="/graph/newRevenueDealType">New Revenue By Deal Type</option>
+		        <option value="/graph/allRevenueDealType">All Revenue By Deal Type</option>
+		        <option value="/graph/newRevenueVertical">New Revenue By Vertical</option>
+		        <option value="/graph/allRevenueVertical">All Revenue by Vertical</option>
+		        <option value="/graph/newRevenueProductLineCount">New Revenue by Product Line (Count)</option>
+		        <option value="/graph/allRevenueProductLineCount">All Revenue by Product Line (Count)</option>
+
+            </select>
+          </div>
+        </form>
+        </div>
+
+{{#if info}}
+    <div id="flashMessage">{{info}}</div>
+{{/if}}
+
+  <h1 class="lft">{{this.title}}</h1>
+  <div class="ctrGraph">
+    {{{bar}}}
+  </div>
+  <div id="mainpage">
+
+            <table id="tablData" class="table">
+              <thead>
+                <tr>
+                  <th id="left">{{this.dataName}}</th>
+                  <th>Jan</th>
+                  <th>Feb</th>
+                  <th>Mar</th>
+                  <th>Apr</th>
+                  <th>May</th>
+                  <th>Jun</th>
+                  <th>Jul</th>
+                  <th>Aug</th>
+                  <th>Sep</th>
+                  <th>Oct</th>
+                  <th>Nov</th>
+                  <th>Dec</th>
+                  <th class= "bolden">Total</th>
+                </tr>
+              </thead>
+              <tbody>
+              {{#each descriptor}}
+                <tr>
+                  <th scope="row">{{this.label}}</th>
+                  <td>{{this.symbol}}{{this.Jan}}</td>
+                  <td>{{this.symbol}}{{this.Feb}}</td>
+                  <td>{{this.symbol}}{{this.Mar}}</td>
+                  <td>{{this.symbol}}{{this.Apr}}</td>
+                  <td>{{this.symbol}}{{this.May}}</td>
+                  <td>{{this.symbol}}{{this.Jun}}</td>
+                  <td>{{this.symbol}}{{this.Jul}}</td>
+                  <td>{{this.symbol}}{{this.Aug}}</td>
+                  <td>{{this.symbol}}{{this.Sep}}</td>
+                  <td>{{this.symbol}}{{this.Oct}}</td>
+                  <td>{{this.symbol}}{{this.Nov}}</td>
+                  <td>{{this.symbol}}{{this.Dec}}</td>
+                  <td class= "bolden">{{this.symbol}}{{this.total}}</td>
+                </tr>
+                {{/each}}
+              </tbody>
+            </table>
+          </div>
+        <div>
+<!--this allows the .xls file to be downloaded with the current graph name as the file name-->
+  <div class="relativ">
+      <a class="btn btn-default blues" target="_blank" href="/excel" download="{{this.title}}.xls">Download XLS File</a>
+  <div class="help-tip">
+    <p>This file will be erased after <span class="crimson">five minutes</span> for security purposes. <br> <br> Reload the page or re-generate the graph for a new XLS file.</p>
+  </div>
+</div>
+<script>
+$(document).ready( function () {
+  $('#tablData').dataTable( {
+    "bSort": false,
+    "bPaginate": false
+  } );
+} );
+</script>
+
+<script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+});
+</script>
+
+</body>

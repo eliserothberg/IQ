@@ -1,0 +1,46 @@
+<body>
+
+    <!--start-bg-->
+
+    <div class="bg">
+        <div class="container">
+            <div class="jumbotron">
+                <div>
+                </div>
+                <h3 class="occHead">Sales by Month</h3>
+                <div id="mainpage">
+                        <ul>
+                            {{#each employees}}
+                                <li>
+                                    <h5>
+                                      Salesperson: {{this.salesperson}}<br>
+                                      January: ${{this.Jan}}<br>
+                                      February: ${{this.Feb}}<br>
+                                      March: ${{this.Mar}}<br>
+                                      April: ${{this.Apr}}<br>
+                                      May: ${{this.May}}<br>
+                                      June: ${{this.Jun}}<br>
+                                      July: ${{this.Jul}}<br>
+                                      August: ${{this.Aug}}<br>
+                                      September: ${{this.Sep}}<br>
+                                      October: ${{this.Oct}}<br>
+                                      November: ${{this.Nov}}<br>
+                                      December: ${{this.Dec}}<br>
+                                    </h5>
+                                </li>
+                            {{/each}}
+                            {{#each months}}
+                              <li>
+                                  <h5>
+                                    Month: {{this.month}}, Total: ${{this.total}}<br>
+                                  </h5>
+                              </li>    
+                            {{/each}}
+                        </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

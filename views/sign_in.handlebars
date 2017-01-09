@@ -1,0 +1,28 @@
+<!-- this is the sign_in.handlebars file inside the users folder of the views folder
+views/users/sign_in.handlebars -->
+<div class="window">
+  <div id="logo">
+    <img src="../assets/images/exampleLogo_f.png">
+  </div>
+<h3 class="occHead">SIGN IN</h3>
+<form class="create-update-form squared" id="signin" action="/users/login" method="POST">
+  <div class="col-2">
+    <label>
+      Email
+      <input type="email" id="em" tabindex="2" name="email" required>
+    </label>
+  </div>
+  <div class="col-2">
+    <label>
+      Password
+      <input type="password" tabindex="3" id="pass" name="password" required>
+    </label>
+  </div>
+  <button id='button' form="signin" type="submit" class="btn btn-default">SIGN IN</button>
+</form>
+
+{{#if info}}
+    <div id="flashMessage">{{info}}</div>
+{{/if}}
+
+</div>
