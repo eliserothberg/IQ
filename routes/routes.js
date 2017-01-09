@@ -18,7 +18,7 @@ var revenueString = 'sum(if(month = 01, revenue, 0))  AS Jan, ' +
 'sum(if(month = 11, revenue, 0)) AS Nov, ' +
 'sum(if(month = 12, revenue, 0)) AS "Dec" ' +
 'FROM Deals ' +
-'WHERE (dealStatus = "Deal Won (100%)" OR dealStatus = "Very Likely (90%)") '+
+'WHERE (dealStatus = "Confirmed" OR dealStatus = "Processing") '+
 'AND (newVersusReturning = ';
 var monthlyString = 'sum(if(month = 01, revenue, 0))  AS Jan, ' +
 'sum(if(month = 02, revenue, 0))  AS Feb, ' +
@@ -35,7 +35,7 @@ var monthlyString = 'sum(if(month = 01, revenue, 0))  AS Jan, ' +
 'FROM Deals ' +
 'INNER JOIN Salespeople ' +
 'ON Deals.salesperson=Salespeople.salesID ' +
-'WHERE (dealStatus = "Deal Won (100%)" OR dealStatus = "Very Likely (90%)") '+
+'WHERE (dealStatus = "Confirmed" OR dealStatus = "Processing") '+
 'AND (newVersusReturning = ';
 var countString = 'sum(if(month = 01, 1, 0))  AS Jan, ' +
 'sum(if(month = 02, 1, 0))  AS Feb, ' +
@@ -50,7 +50,7 @@ var countString = 'sum(if(month = 01, 1, 0))  AS Jan, ' +
 'sum(if(month = 11, 1, 0)) AS Nov, ' +
 'sum(if(month = 12, 1, 0)) AS "Dec" ' +
 'FROM Deals ' +
-'WHERE (dealStatus = "Deal Won (100%)" OR dealStatus = "Very Likely (90%)") '+
+'WHERE (dealStatus = "Confirmed" OR dealStatus = "Processing") '+
 'AND (newVersusReturning = ';
 
 console.log('in routes.js');
